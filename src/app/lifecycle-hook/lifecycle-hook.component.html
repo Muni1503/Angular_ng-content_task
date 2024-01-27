@@ -1,0 +1,32 @@
+<p>lifecycle-hook works!</p>
+<h1>size={{size}}</h1>
+<ng-content select="h1"></ng-content>
+<p>This line above shows h1 and line below shows h2</p>
+<ng-content select="h2"></ng-content>
+
+<!-- 1.life cycle is the phase between component creation and the destroy of the component -->
+<!-- 2.we may have the requiirements such as something thing we want to do when component
+created or destroyed
+3.for that approach we use lifeCycle events
+4.This events is is known as lifeCycle hook               -->
+
+<!-- A component instance has a lifecycle that starts when Angular instantiates the component
+class and renders the component view along with its child views. The lifecycle continues
+with change detection, as Angular checks to see when data-bound properties change, and 
+updates both the view and the component instance as needed. The lifecycle ends when 
+Angular destroys the component instance and removes its rendered template from the DOM. 
+Directives have a similar lifecycle, as Angular creates, updates, and destroys instances
+in the course of execution. -->
+
+<!--lifecycle hooks methods-->
+<!-- 1. ngOnChanges 	When an input or output binding value changes.
+2 	ngOnInit 	         -After the first ngOnChanges.
+3 	ngDoCheck 	         -Developer's custom change detection.
+4 	ngAfterContentInit 	 -After component content initialized.
+5 	ngAfterContentChecked -After every check of component content.
+6 	ngAfterViewInit 	  -After the views of a component are initialized.
+7 	ngAfterViewChecked 	  -After every check of the views of a component.
+8 	ngOnDestroy 	      -Just before the directive is destroyed. -->
+
+<!--constructor should be called before any hook method called-->
+<!--constructor is an method of javascript class-->  
